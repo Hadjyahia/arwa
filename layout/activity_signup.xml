@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/editTextPhoto"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="Photo"
+
+        android:textAlignment="center"
+        android:textColorHint="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailRegis" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="Address"
+        android:textAlignment="center"
+        android:textColorHint="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPasswordRegis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhoto" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegis"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textColorHint="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddress" />
+
+    <View
+        android:id="@+id/viewLogo"
+        android:layout_width="188dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sginup1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailRegis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111">
+
+    </View>
+
+    <View
+        android:id="@+id/viewdesgin"
+        android:layout_width="57dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/sginup2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </View>
+
+    <View
+        android:id="@+id/viewdesgin1"
+        android:layout_width="64dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/sginup3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <EditText
+        android:id="@+id/editTextEmailRegis"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="Email"
+        android:textColorHint="@color/gris"
+        android:textAlignment="center"
+
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_edittext"
+        android:gravity="center"
+        android:hint="Full Name "
+
+        android:textAlignment="center"
+        android:textColorHint="@color/gris"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailRegis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLogo" />
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/bg_edittext"
+        android:backgroundTint="@color/beige"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordRegis" />
+
+
+    <View
+        android:id="@+id/viewOrLoginWith"
+        android:layout_width="190dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginBottom="49dp"
+        android:background="@drawable/sginup4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonRegister"/>
+
+    <View
+        android:id="@+id/viewGG"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/sginup5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewOrLoginWith">
+
+    </View>
+
+    <View
+        android:id="@+id/viewFF"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/sginup6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/viewGG"
+        app:layout_constraintTop_toBottomOf="@+id/viewOrLoginWith"
+        app:layout_constraintVertical_bias="0.0">
+
+    </View>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
